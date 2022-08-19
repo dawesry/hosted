@@ -1,0 +1,9 @@
+#!/usr/bin/zsh
+
+sudo apt-get update
+
+sudo apt upgrade -y
+
+sudo apt autoremove -y
+
+sudo snap refresh
