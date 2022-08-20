@@ -61,6 +61,12 @@ bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-termin
 
 3. ### Install scripts
 
+Install Subversion to parse data files from Github.
+
+```
+sudo apt install subversion
+```
+
 Run this following in a ZSH terminal:
 
 ```
