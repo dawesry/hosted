@@ -1,5 +1,3 @@
-# hosted
-
 1. ### Getting Started
 
 Install zsh.
