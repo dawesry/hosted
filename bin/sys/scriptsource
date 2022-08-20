@@ -15,7 +15,8 @@ export PATH="$HOME/bin/clients:$PATH"' >> ~/.zshrc
 
 echo "Added sources to ~/.zshrc"
 
-echo "All done, thanks!\ You should close this window."
+echo "All done, thanks!"
+echo "When adding a new script to ~/bin, be sure to run 'scriptprem' "
 
 source ~/.zshrc
 
