@@ -13,10 +13,11 @@ export PATH="$HOME/bin/sys:$PATH"
 export PATH="$HOME/bin/ts:$PATH"
 export PATH="$HOME/bin/clients:$PATH"' >> ~/.zshrc
 
-echo "Added sources to ~/.zshrc"
+echo "Added ~/bin/* sources to ~/.zshrc"
 
-echo "All done, thanks!"
-echo "When adding a new script to ~/bin, be sure to run 'scriptprem' "
+echo "All done, scripts are now executable!"
+
+echo "Add new scripts to ~/bin. Be sure to run 'scriptprem' "
 
 source ~/.zshrc
 
