@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+sh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/bin/sys/scriptsource)"
+
+pkill gnome-terminal
