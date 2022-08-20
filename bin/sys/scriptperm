@@ -1,0 +1,5 @@
+#!/usr/bin/zsh
+
+sudo chmod -R 744 ~/bin
+
+echo "Granted."
