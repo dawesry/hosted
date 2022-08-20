@@ -33,6 +33,26 @@ Restart ZSH.
 exec ZSH
 ```
 Configure P10K theme to device specification.
+Use `p10k configure` to configure.
+
+```
+Settings:
+---
+Prompt Style: 3. Rainbow
+Character Set: 1. Unicode
+Show Time: 1. No
+Prompt Separators: 3. Slanted
+Prompt Heads: 1. Sharp
+Prompt Tails: 1. Flat
+Prompt Height: 1. One Line
+Prompt Spacing: 2. Sparse
+Icons: 2. Many Icons
+Prompt Flow: 1. Consise
+Transient Prompt: y. Yes
+
+Rest of settings: Set to preference.
+
+```
 
 3. ### Install scripts
 
