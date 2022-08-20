@@ -1,3 +1,0 @@
-#!/usr/bin/zsh
-
-svn export https://github.com/dawesry/hosted/trunk/bin ~/bin/imported/
