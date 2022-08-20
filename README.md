@@ -32,8 +32,8 @@ Restart ZSH.
 ```
 exec ZSH
 ```
-Configure P10K theme to device specification.
-Use `p10k configure` to configure.
+
+Use `p10k configure` to configure to device specification.
 
 ```
 Settings:
