@@ -53,7 +53,9 @@ Transient Prompt: y. Yes
 Rest of settings: Set to preference.
 ```
 Set GNOME Theme to Atom One Dark with:
-`bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"`
+```
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
+```
 
 
 
