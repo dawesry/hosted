@@ -1,5 +1,7 @@
 #!/usr/bin/zsh
 
+echo "Starting full install"
+
 svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
 
 echo "Script directory downloaded"
@@ -17,7 +19,7 @@ echo "Added ~/bin/* sources to ~/.zshrc"
 
 echo "All done, scripts are now executable!"
 
-echo "Add new scripts to ~/bin. Be sure to run 'scriptprem' "
+echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitupgrade' to upgrade local machines."
 
 source ~/.zshrc
 

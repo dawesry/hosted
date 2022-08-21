@@ -1,5 +1,9 @@
 #!/bin/zsh
 
+echo "Starting full install"
+
+zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
+
 cp -r ~/bin ~/bin.old
 
 rm -rf ~/bin
@@ -16,7 +20,7 @@ echo "Permission Granted."
 
 echo "All done, scripts are now executable!"
 
-echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitscripts -u' to upgrade local machines."
+echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitupgrade' to upgrade local machines."
 
 echo "Refreshing ZSH..."
 
