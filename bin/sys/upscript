@@ -2,4 +2,6 @@
 
 cd ~/Documents/dev/hosted
 
+git add .
+
 git push origin main:main
