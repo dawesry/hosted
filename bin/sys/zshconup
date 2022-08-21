@@ -2,6 +2,14 @@
 
 cp ~/.p10k.zsh ~/.p10k.zsh.old
 
+echo "Created ~/.p10k.zsh.old"
+
 rm -f ~/.p10k.zsh
 
+echo "Created new ~/.p10k.zsh"
+
 svn export https://github.com/dawesry/hosted/trunk/config/.p10k.zsh ~/.p10k.zsh
+
+echo "Refreshing ZSH..."
+
+exec zsh
