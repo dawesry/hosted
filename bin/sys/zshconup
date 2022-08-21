@@ -1,0 +1,7 @@
+#!/usr/bin/zsh
+
+cp ~/.p10k.zsh ~/.p10k.zsh.old
+
+rm -f ~/.p10k.zsh
+
+svn export https://github.com/dawesry/hosted/trunk/config/.p10k.zsh ~/.p10k.zsh
