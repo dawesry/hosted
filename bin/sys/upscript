@@ -1,0 +1,5 @@
+#!/bin/zsh
+
+cd ~/Documents/dev/hosted
+
+git push origin main:main
