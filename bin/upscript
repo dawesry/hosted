@@ -25,5 +25,3 @@ source ~/.zshrc
 exit 0
 
 exec zsh
-
-exit 0
