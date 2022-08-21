@@ -1,14 +1,14 @@
 #!/usr/bin/zsh
 
-echo "Starting full install"
+echo "Starting full install."
 
 svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
 
-echo "Script directory downloaded"
+echo "/bin and contents downloaded."
 
 sudo chmod -R 744 ~/bin
 
-echo "Permission Granted"
+echo "Permission Granted, scripts are now executable."
 
 sudo echo 'export PATH="$HOME/bin:$PATH"
 export PATH="$HOME/bin/sys:$PATH"
@@ -17,9 +17,9 @@ export PATH="$HOME/bin/clients:$PATH"' >> ~/.zshrc
 
 echo "Added ~/bin/* sources to ~/.zshrc"
 
-echo "All done, scripts are now executable!"
-
 echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitupgrade' to upgrade local machines."
+
+echo "Refreshing ZSH..."
 
 source ~/.zshrc
 
