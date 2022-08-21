@@ -1,3 +1,19 @@
-#!/usr/bin/zsh
+#!/bin/zsh
 
-zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
+while getopts 'ufa:' OPTION; do
+  case "$OPTION" in
+    f)
+      echo "Starting full install"
+      zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
+      ;;
+    u)
+      echo "Starting upgrade package"
+      zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/upgrade)"
+      ;;
+    ?)
+      echo "script usage: `basename $0` [-f] [-u]" >&2
+      exit 1
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
