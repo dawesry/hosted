@@ -17,7 +17,9 @@ export PATH="$HOME/bin/clients:$PATH"' >> ~/.zshrc
 
 echo "Added ~/bin/* sources to ~/.zshrc"
 
-echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitupgrade' to upgrade local machines."
+echo "Add new scripts to '~/dev/hosted/bin'."
+
+echo "Be sure to run 'upscript' to upgrade local machines."
 
 echo "Refreshing ZSH..."
 
