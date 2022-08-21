@@ -70,5 +70,5 @@ sudo apt install subversion
 Run this following in a ZSH terminal:
 
 ```
-zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/gitscripts)"
+zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
 ```
