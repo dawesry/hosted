@@ -3,3 +3,5 @@
 rm -rf ~/bin.old
 
 rm -f ~/.p10k.zsh.old
+
+exit 0

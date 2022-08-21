@@ -3,3 +3,5 @@
 sudo chmod -R 744 ~/bin
 
 echo "Granted."
+
+exit 0

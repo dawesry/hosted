@@ -13,3 +13,5 @@ svn export https://github.com/dawesry/hosted/trunk/config/.p10k.zsh ~/.p10k.zsh
 echo "Refreshing ZSH..."
 
 exec zsh
+
+exit 0

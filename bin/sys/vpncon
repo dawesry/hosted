@@ -1,3 +1,0 @@
-#!/usr/bin/zsh
-
-openvpn3 session-start --config /home/profile-12.ovpn
