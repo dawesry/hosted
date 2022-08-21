@@ -8,4 +8,4 @@ sudo apt autoremove -y
 
 sudo snap refresh
 
-exit [n]
+exit 0

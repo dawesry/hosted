@@ -27,4 +27,4 @@ source ~/.zshrc
 
 exec zsh
 
-exit [n]
+exit 0
