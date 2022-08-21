@@ -1,1 +1,23 @@
+#!/bin/zsh
 
+cp -r ~/bin ~/bin.old
+
+Created `~/bin.old\n`.
+
+svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
+
+echo "New /bin and contents downloaded.\n"
+
+sudo chmod -R 744 ~/bin
+
+echo "Permission Granted.\n"
+
+echo "All done, scripts are now executable!\n"
+
+echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitscripts -u' to upgrade local machines.\n"
+
+echo "Refreshing ZSH...\n"
+
+source ~/.zshrc
+
+exec zsh
