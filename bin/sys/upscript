@@ -1,7 +1,0 @@
-#!/bin/zsh
-
-cd ~/Documents/dev/hosted
-
-git add -A
-
-git push origin main:main
