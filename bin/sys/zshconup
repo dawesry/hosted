@@ -14,4 +14,4 @@ echo "Refreshing ZSH..."
 
 exec zsh
 
-exit 0
+exit [n]
