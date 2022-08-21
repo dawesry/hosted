@@ -1,5 +1,0 @@
-#!/bin/zsh
-
-
-
-zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
