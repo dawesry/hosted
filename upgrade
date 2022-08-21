@@ -2,6 +2,8 @@
 
 cp -r ~/bin ~/bin.old
 
+rm -rf ~/bin
+
 Created `~/bin.old`.
 
 svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
