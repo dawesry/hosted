@@ -2,21 +2,21 @@
 
 cp -r ~/bin ~/bin.old
 
-Created `~/bin.old\n`.
+Created `~/bin.old`.
 
 svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
 
-echo "New /bin and contents downloaded.\n"
+echo "New /bin and contents downloaded."
 
 sudo chmod -R 744 ~/bin
 
-echo "Permission Granted.\n"
+echo "Permission Granted."
 
-echo "All done, scripts are now executable!\n"
+echo "All done, scripts are now executable!"
 
-echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitscripts -u' to upgrade local machines.\n"
+echo "Add new scripts to '~/dev/hosted/bin'. Be sure to run 'gitscripts -u' to upgrade local machines."
 
-echo "Refreshing ZSH...\n"
+echo "Refreshing ZSH..."
 
 source ~/.zshrc
 
