@@ -1,6 +1,13 @@
 #!/bin/zsh
 
+if rm -f ~/.p10k.zsh.old; then
+    echo "Deleted ~/.p10k.old succeeded"
+else
+    echo "No ~/.p10k.old found"
+fi
 
-rm -rf ~/bin.old
-
-rm -f ~/.p10k.zsh.old
+if rm -rf ~/bin.old; then
+    echo "Deleted ~/bin.old succeeded"
+else
+    echo "No bin found"
+fi
