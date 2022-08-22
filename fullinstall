@@ -26,5 +26,3 @@ echo "Refreshing ZSH..."
 source ~/.zshrc
 
 exit 0
-
-exec zsh
