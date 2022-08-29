@@ -4,6 +4,8 @@ echo "Starting full install."
 
 sudo apt install subversion
 
+sudo mkdir -p /mnt/Media/
+
 svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
 
 echo "/bin and contents downloaded."
