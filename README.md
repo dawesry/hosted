@@ -1,6 +1,6 @@
 1. ### Getting Started
 
-Run this following in a BASH terminal to install ZSH & themes:
+Run this following in a BASH terminal to install ZSH & themes, and Git:
 
 ```
 bash -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/preinstall)"
