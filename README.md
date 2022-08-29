@@ -21,7 +21,7 @@ zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/pullbin)"
 ```
 
 
-## Usage
+## Script Usage
 
 | Script Command | Usage |
 |---	|---	|
@@ -31,5 +31,6 @@ zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/pullbin)"
 | `nascon` | mount NFS share |
 | `cleanup` | remove *.old directories |
 | `packup` | update machine packages |
+| `pulldockcomp` | pull latest docker-compose.yml |
 | `*clientname` | SSH connect to specified client |
 
