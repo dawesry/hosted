@@ -2,15 +2,15 @@
 
 echo "MOUNT COMMAND RUNNING"
 
-sleep(3)
+sleep 3
 
 print_usage() {
   echo "Usage: ..."
 }
 
 restart_docker() {
-  echo "DOCKER RESTART COMMAND
-  read -p "Press enter to continue..."
+  echo "DOCKER RESTART COMMAND"
+  sleep 3
   echo "docker restarted :)"
 }
 
