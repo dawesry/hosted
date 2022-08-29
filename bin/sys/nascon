@@ -2,20 +2,22 @@
 
 sudo mount 192.168.1.25:/volume1/Media/ /mnt/Media/
 
+echo "NFS mounted"
+
 print_usage() {
-  echo "Usage: ..."
+  echo "Usage: -d        restart docker"
 }
 
 restart_docker() {
   sudo service docker restart
-  echo "docker restarted :)"
+  echo "Docker restarted"
 }
-
 
 while getopts 'd' flag; do
   case "${flag}" in
     d) restart_docker
-       exit 0;;
+       echo "All done!"
+       exit 0 ;;
     *) print_usage
        exit 1 ;;
   esac
