@@ -12,4 +12,4 @@ echo "Set `ZSH_THEME="powerlevel10k/powerlevel10k"` in `~/.zshrc`."
 
 wait 2
 
-exec ZSH
+exit 0
