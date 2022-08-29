@@ -1,0 +1,27 @@
+#!/usr/bin/zsh
+
+echo "MOUNT COMMAND RUNNING"
+
+read -p "Press enter to continue..."
+
+print_usage() {
+  echo "Usage: ..."
+}
+
+restart_docker() {
+  echo "DOCKER RESTART COMMAND
+  read -p "Press enter to continue..."
+  echo "docker restarted :)"
+}
+
+
+while getopts 'd' flag; do
+  case "${flag}" in
+    d) restart_docker
+       exit 0;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+exit 0
