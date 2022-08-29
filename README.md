@@ -6,14 +6,14 @@ Run this following in a BASH terminal to install ZSH & themes, and Git:
 bash -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/preinstall)"
 ```
 
-## Usage
-
-
 Run this following in a ZSH terminal for a full install:
 
 ```
 zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
 ```
+
+
+## Usage
 
 | Script Command | Usage |
 |---	|---	|
