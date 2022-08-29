@@ -42,10 +42,13 @@ Run this following in a ZSH terminal for a full install:
 zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
 ```
 
-Run this to update when new sripts are added
-```
-upscript
-```
-
+| Script Command | Usage |
+|---	|---	|
+| `upscript` | update scripts in ~/bin |
+| `zshconup` | update p10k configuration |
+| `scriptperm` | update executable permissions for ~/bin |
+| `nascon` | mount NFS share |
+| `cleanup` | remove *.old directories |
+| `packup` | update machine packages |
 
 
