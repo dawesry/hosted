@@ -7,11 +7,17 @@ Run this following in a BASH terminal to install ZSH & themes, and Git:
 bash -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/bin/sys/inszsh)"
 ```
 
-### Full Install
-Run this following in a ZSH terminal for a full install:
+Run this following in a BASH terminal to install Docker:
 
 ```
-zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
+bash -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/bin/sys/insdocker)"
+```
+
+### Pull `~/bin` Directory
+Run this following in a ZSH terminal for a first time pull:
+
+```
+zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/pullbin)"
 ```
 
 
