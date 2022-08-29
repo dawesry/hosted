@@ -13,7 +13,8 @@ services:
             - '/var/lib/docker/volumes/radarr_data/_data:/config'
             - '/mnt/Media/:/data/Media'
         restart: unless-stopped
-        image: 'hotio/radarr:release'
+        image: hotio/radarr:release
+    
     sonarr:
         container_name: sonarr
         environment:
@@ -27,7 +28,8 @@ services:
             - '/var/lib/docker/volumes/sonarr_data/_data:/config'
             - '/mnt/Media/:/data/Media'
         restart: unless-stopped
-        image: 'hotio/sonarr:release'
+        image: hotio/sonarr:release
+    
     nzbget:
         container_name: nzbget
         environment:
@@ -41,7 +43,8 @@ services:
             - '/var/lib/docker/volumes/nzbget_data/_data:/config'
             - '/mnt/Media/Downloads:/Media/Downloads'
         restart: unless-stopped
-        image: 'hotio/nzbget:release'
+        image: hotio/nzbget:release
+    
     prowlarr:
         container_name: prowlarr
         ports:
@@ -53,7 +56,8 @@ services:
             - TZ=“USA/New_York”
         volumes:
             - '/var/lib/docker/volumes/prowlarr_data/_data:/config'
-        image: 'hotio/prowlarr:nightly'
+        image: hotio/prowlarr:nightly
+    
     nextcloud:
         container_name: nextcloud
         ports:
@@ -66,7 +70,7 @@ services:
         volumes:
             - '/var/lib/docker/volumes/nextcloud_data/_data:/config'
             - '/mnt/Media/Cloud/Data:/data'
-        image: 'nextcloud'
+        image: nextcloud
 
 networks:
   bridge:
