@@ -22,11 +22,11 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
-sudo groupadd docker
-
-sudo usermod -aG docker $USER
-
-newgrp docker
+if sudo groupadd docker; then
+ sudo usermod -aG docker $USER
+ else
+ echo "group exists"
+fi
 
 sudo systemctl enable docker.service
 
