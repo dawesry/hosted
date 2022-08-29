@@ -1,14 +1,13 @@
 1. ### Getting Started
 
+### Pre-Install
 Run this following in a BASH terminal to install ZSH & themes, and Git:
 
 ```
 bash -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/preinstall)"
 ```
 
-___
-
-
+### Full Install
 Run this following in a ZSH terminal for a full install:
 
 ```
