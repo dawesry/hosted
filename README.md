@@ -33,32 +33,6 @@ Restart ZSH.
 exec ZSH
 ```
 
-Use `p10k configure` to configure to device specification.
-
-```
-Settings:
----
-Prompt Style: 3. Rainbow
-Character Set: 1. Unicode
-Show Time: 1. No
-Prompt Separators: 3. Slanted
-Prompt Heads: 1. Sharp
-Prompt Tails: 1. Flat
-Prompt Height: 1. One Line
-Prompt Spacing: 2. Sparse
-Icons: 2. Many Icons
-Prompt Flow: 1. Consise
-Transient Prompt: y. Yes
-
-Rest of settings: Set to preference.
-```
-Set GNOME Theme to Atom One Dark with:
-```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/denysdovhan/gnome-terminal-one/master/one-dark.sh)"
-```
-
-
-
 3. ### Install scripts
 
 
