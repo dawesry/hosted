@@ -61,7 +61,7 @@ services:
     nextcloud:
         container_name: nextcloud
         ports:
-            - '4443:443'
+            - '8080:80'
         environment:
             - PUID=1000
             - PGID=1000
