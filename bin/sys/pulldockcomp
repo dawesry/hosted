@@ -4,6 +4,7 @@ if sudo rm ~/docker-compose.yml; then
   echo "old docker compose file deleted"
 else
   echo "No old docker compose file to delete."
+fi
 
 svn export https://github.com/dawesry/hosted/trunk/docker/docker-compose.yml ~/docker-compose.yml
 
