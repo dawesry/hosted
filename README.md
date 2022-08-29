@@ -50,5 +50,5 @@ zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
 | `nascon` | mount NFS share |
 | `cleanup` | remove *.old directories |
 | `packup` | update machine packages |
-
+| `*clientname` | SSH connect to specified client |
 
