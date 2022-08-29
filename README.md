@@ -33,11 +33,19 @@ Restart ZSH.
 exec ZSH
 ```
 
-3. ### Install scripts
+## Usage
 
 
-Run this following in a ZSH terminal:
+Run this following in a ZSH terminal for a full install:
 
 ```
 zsh -c "$(curl -fsSL https://raw.github.com/dawesry/hosted/main/fullinstall)"
 ```
+
+Run this to update when new sripts are added
+```
+upscript
+```
+
+
+
