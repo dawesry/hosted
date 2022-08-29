@@ -2,7 +2,7 @@
 
 echo "MOUNT COMMAND RUNNING"
 
-read -p "Press enter to continue..."
+sleep(3)
 
 print_usage() {
   echo "Usage: ..."
