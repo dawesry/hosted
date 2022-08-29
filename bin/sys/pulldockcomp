@@ -10,6 +10,6 @@ svn export https://github.com/dawesry/hosted/trunk/docker/docker-compose.yml ~/d
 
 echo "~/docker-compose.yml created."
 
-echo "Run docker-compose up to start."
+echo "Run 'docker compose up' to build."
 
 exit 0
