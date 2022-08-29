@@ -71,7 +71,3 @@ services:
             - '/var/lib/docker/volumes/nextcloud_data/_data:/config'
             - '/mnt/Media/Cloud/Data:/data'
         image: nextcloud
-
-networks:
-  bridge:
-    
