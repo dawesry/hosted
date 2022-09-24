@@ -1,6 +1,6 @@
 #!/usr/bin/zsh
 
-sudo mount 192.168.1.25:/volume1/Media/ /mnt/Media/
+sudo mount 192.168.0.112:/volume1/Media/ /mnt/Media/
 
 echo "NFS mounted"
 
