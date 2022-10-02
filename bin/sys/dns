@@ -6,12 +6,12 @@ print_usage() {
 }
 
 dns_off() {
-  nextdns stop
+  sudo nextdns stop
   echo "NextDNS Off"
 }
 
 dns_on() {
-  nextdns start
+  sudo nextdns start
   echo "NextDNS On"
 }
 
