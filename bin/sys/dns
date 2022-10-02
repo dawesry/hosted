@@ -1,0 +1,31 @@
+#!/usr/bin/zsh
+
+print_usage() {
+  echo "Usage: -u        nextdns up"
+  echo "Usage: -d        nextdns down"
+}
+
+dns_off() {
+  nextdns stop
+  echo "NextDNS Off"
+}
+
+dns_on() {
+  nextdns start
+  echo "NextDNS On"
+}
+
+while getopts 'ud' flag; do
+  case "${flag}" in
+    u) dns_on
+       echo "All done!"
+       exit 0 ;;
+    d) dns_off
+       echo "All done!"
+       exit 0 ;;
+    *) print_usage
+       exit 1 ;;
+  esac
+done
+
+exit 0
