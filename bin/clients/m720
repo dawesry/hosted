@@ -1,3 +1,5 @@
 #!/usr/bin/zsh
 
-ssh m720@m720
+ssh m720@192.168.0.114
+
+exit 0
