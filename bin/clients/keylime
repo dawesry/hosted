@@ -1,3 +1,5 @@
 #!/usr/bin/zsh
 
-ssh keylime@keylime
+ssh keylime@192.168.0.115
+
+exit 0
