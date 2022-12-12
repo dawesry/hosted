@@ -59,17 +59,3 @@ services:
         restart: unless-stopped
         image: hotio/prowlarr:nightly
     
-    nextcloud:
-        container_name: nextcloud
-        ports:
-            - '8080:80'
-        environment:
-            - PUID=1000
-            - PGID=1000
-            - UMASK=002
-            - TZ=“USA/New_York”
-        volumes:
-            - '/var/lib/docker/volumes/nextcloud_data/_data:/config'
-            - '/mnt/Media/Cloud/Data:/data'
-        restart: unless-stopped
-        image: nextcloud
