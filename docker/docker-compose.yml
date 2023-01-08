@@ -70,4 +70,4 @@ services:
         restart: always
         image: portainer/portainer-ce:latest
 volumes:
-    portainer_data
+    -portainer_data
