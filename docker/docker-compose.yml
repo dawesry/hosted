@@ -72,3 +72,5 @@ services:
 volumes:
     portainer_data:
         external: true
+    radarr_data:
+        external: true
