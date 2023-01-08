@@ -10,7 +10,7 @@ services:
         ports:
             - '7878:7878'
         volumes:
-            - 'radarr_data:/config'
+            - '/var/lib/docker/volumes/radarr_data/_data:/config'
             - '/mnt/Media/:/data/Media'
         restart: unless-stopped
         image: hotio/radarr:release
@@ -25,7 +25,7 @@ services:
         ports:
             - '8989:8989'
         volumes:
-            - 'sonarr_data:/config'
+            - '/var/lib/docker/volumes/sonarr_data/_data:/config'
             - '/mnt/Media/:/data/Media'
         restart: unless-stopped
         image: hotio/sonarr:release
@@ -40,7 +40,7 @@ services:
         ports:
             - '6789:6789'
         volumes:
-            - 'nzbget_data:/config'
+            - '/var/lib/docker/volumes/nzbget_data/_data:/config'
             - '/mnt/Media/Downloads:/Media/Downloads'
         restart: unless-stopped
         image: hotio/nzbget:release
@@ -55,7 +55,7 @@ services:
             - UMASK=002
             - TZ=“USA/New_York”
         volumes:
-            - 'prowlarr_data:/config'
+            - '/var/lib/docker/volumes/prowlarr_data/_data:/config'
         restart: unless-stopped
         image: hotio/prowlarr:nightly
     
@@ -71,12 +71,4 @@ services:
         image: portainer/portainer-ce:latest
 volumes:
     portainer_data:
-        external: true
-    radarr_data:
-        external: true
-    sonarr_data:
-        external: true
-    prowlarr_data:
-        external: true
-    nzbget_data:
         external: true
