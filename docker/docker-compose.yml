@@ -59,3 +59,13 @@ services:
         restart: unless-stopped
         image: hotio/prowlarr:nightly
     
+    portainer:
+        container_name: portainer
+        ports:
+            - '8000:8000'
+            - '9443:9443'
+        volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+            - 'portainer_data:/data'
+        restart: always
+        image: portainer/portainer-ce:latest
