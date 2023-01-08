@@ -1,0 +1,15 @@
+#!/usr/bin/zsh
+
+docker-compose pull
+
+echo "New images pulled."
+
+docker-compose up --force-recreate --build -d
+
+echo "New containers up and running."
+
+docker image prune -f
+
+echo "Old images pruned."
+
+exit 0
