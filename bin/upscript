@@ -4,7 +4,7 @@ echo "Starting upgrade."
 
 cp -r ~/bin ~/bin.old
 
-rm -rf ~/bin
+sudo rm -rf ~/bin
 
 echo "Created `~/bin.old`. It is safe to delete this folder."
 
