@@ -48,13 +48,6 @@ update_all() {
     
     exit 1
   fi
-  
-  if [ $yesno != "y" ] && [ $yesno != "n" ]; then
-    
-    echo "invalid. goodbye!"
-    
-    exit 0
-  fi
 
 }
 
