@@ -21,7 +21,7 @@ update_one () {
 }
 
 update_all() {
-  echo "Do you want to update all? (y/n)
+  echo "Do you want to update all? (y/n)"
   
   read yesno
   
