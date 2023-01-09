@@ -38,6 +38,12 @@ update_all() {
   exit 0
 }
 
+help () {
+echo "options:
+    -a, update all containers \n
+    -s, update single container"
+}
+
 while getopts "as:" flag; do
   case $flag in
     a)
@@ -46,10 +52,12 @@ while getopts "as:" flag; do
       ;;
     s)
       echo "-s was triggered!"
-      
+      exit 0
       ;;
-    :?)
+    *?)
       echo "Invalid option"
+      help()
+      exit 1
       ;;
   esac
 done
