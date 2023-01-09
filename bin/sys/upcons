@@ -25,7 +25,7 @@ update_all() {
   
   read yesno
   
-  if [$yesno == ^(y)S]; then
+  if [$yesno == "y"]; then
    
     docker-compose pull
 
@@ -42,15 +42,18 @@ update_all() {
     exit 1
   fi
   
-  if [$yesno == ^(n)S]; then
+  if [$yesno == "n"]; then
   
     echo "Ok. Goodbye!"
     
     exit 1
   fi
   
-  if [$yesno != ^(y|n)$]; then 
-    echo "Must be y/n"
+  if [ "$yesno" != "y" ] && [ "$yesno" != "n" ]; then
+    
+    echo "invalid. goodbye!"
+    
+    exit 0
   fi
 
 }
