@@ -18,8 +18,6 @@ update_one () {
   docker image prune -f
   
   echo "Old image pruned."
-  
-  exit 0
 }
 
 update_all() {
@@ -34,14 +32,6 @@ update_all() {
   docker image prune -f
 
   echo "Old images pruned."
-  
-  exit 0
-}
-
-help () {
-echo "options:
-    -a, update all containers \n
-    -s, update single container"
 }
 
 while getopts 'as' OPTION; do
