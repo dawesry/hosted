@@ -21,17 +21,41 @@ update_one () {
 }
 
 update_all() {
-  docker-compose pull
+  echo "Do you want to update all? (y/n)
+  
+  read yesno
+  
+  if [$yesno == "y"]; then
+   
+    docker-compose pull
 
-  echo "New images pulled."
+    echo "New images pulled."
 
-  docker-compose up --force-recreate --build -d
+    docker-compose up --force-recreate --build -d
 
-  echo "New containers up and running."
+    echo "New containers up and running."
 
-  docker image prune -f
+    docker image prune -f
 
-  echo "Old images pruned."
+    echo "Old images pruned."
+    
+    exit 1
+  fi
+  
+  if [$yesno == "n"]; then
+  
+    echo "Ok. Goodbye!"
+    
+    exit 1
+  fi
+  
+    if [$yesno != "n"] || [$yesno != "y"]; then
+  
+    echo "Invalid entry. Goodbye!"
+    
+    exit 1
+  fi
+  
 }
 
 help_text() {
@@ -53,12 +77,10 @@ fi
 while getopts 'as' OPTION; do
   case "$OPTION" in
     a)
-      echo "a"
       update_all
       exit 1
       ;;
     s)
-      echo "s"
       update_one
       exit 1
       ;;
