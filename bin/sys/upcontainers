@@ -1,15 +1,57 @@
 #!/usr/bin/zsh
 
-docker-compose pull
+update_one () {
+  docker ps --format "{{.Names}}"
 
-echo "New images pulled."
+  echo "Which container do you want to update?"
 
-docker-compose up --force-recreate --build -d
+  read containername
 
-echo "New containers up and running."
+  docker-compose pull $containername 
 
-docker image prune -f
+  echo "New image pulled."
 
-echo "Old images pruned."
+  docker-compose up --force-recreate --build -d $containername
+  
+  echo "New container up and running."
+  
+  docker image prune -f
+  
+  echo "Old image pruned."
+  
+  done
+}
+
+update_all() {
+  docker-compose pull
+
+  echo "New images pulled."
+
+  docker-compose up --force-recreate --build -d
+
+  echo "New containers up and running."
+
+  docker image prune -f
+
+  echo "Old images pruned."
+  
+  done
+}
+
+while getopts ":a:s"; do
+  case $opt in
+    a)
+      echo "-a was triggered!"
+      exit 0
+      ;;
+    s)
+      echo "-s was triggered!"
+      
+      ;;
+    ?)
+      echo "Invalid option"
+      ;;
+  esac
+done
 
 exit 0
