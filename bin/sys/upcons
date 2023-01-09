@@ -34,22 +34,36 @@ update_all() {
   echo "Old images pruned."
 }
 
-while getopts 'as:' OPTION; do
+help_text() {
+  echo "script usage: upcons [-a] [-s]"
+}
+
+if [ $# -lt 1 ]; then
+    echo "Not enough arguments."
+    help_text
+    exit 1
+fi
+
+if [ $# -gt 1 ]; then
+    echo "Too many arguments."
+    help_text
+    exit 1
+fi
+
+while getopts 'as' OPTION; do
   case "$OPTION" in
     a)
       echo "a"
       update_all
+      exit 1
       ;;
     s)
       echo "s"
       update_one
-      ;;
-    ?)
-      echo "script usage: upcons [-a] [-s]"
       exit 1
       ;;
     *)
-      echo "script usage: upcons [-a] [-s]"
+      help_text
       exit 1
       ;;
   esac
