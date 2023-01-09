@@ -38,9 +38,11 @@ while getopts 'as' OPTION; do
   case "$OPTION" in
     a)
       echo "a"
+      update_all()
       ;;
-    a)
+    s)
       echo "s"
+      update_one()
       ;;
     ?)
       echo "script usage: upcontainers [-a] [-s]"
