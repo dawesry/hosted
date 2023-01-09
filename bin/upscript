@@ -2,7 +2,7 @@
 
 echo "Starting upgrade."
 
-cp -r ~/bin ~/bin.old
+sudo cp -r ~/bin ~/bin.old
 
 sudo rm -rf ~/bin
 
