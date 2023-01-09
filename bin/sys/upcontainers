@@ -44,22 +44,20 @@ echo "options:
     -s, update single container"
 }
 
-while getopts "as:" flag; do
-  case $flag in
+while getopts 'as' OPTION; do
+  case "$OPTION" in
     a)
-      echo "-a was triggered!"
-      exit 0
+      echo "a"
       ;;
-    s)
-      echo "-s was triggered!"
-      exit 0
+    a)
+      echo "s"
       ;;
-    *)
-      echo "Invalid option"
-      help()
+    ?)
+      echo "script usage: $(basename \$0) [-a] [-s]"
       exit 1
       ;;
   esac
 done
+shift "$(($OPTIND -1))"
 
 exit 0
