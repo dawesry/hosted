@@ -19,7 +19,7 @@ update_one () {
   
   echo "Old image pruned."
   
-  done
+  exit 0
 }
 
 update_all() {
@@ -35,7 +35,7 @@ update_all() {
 
   echo "Old images pruned."
   
-  done
+  exit 0
 }
 
 while getopts ":a:s"; do
