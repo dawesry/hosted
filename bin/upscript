@@ -8,7 +8,7 @@ rm -rf ~/bin
 
 echo "Created `~/bin.old`. It is safe to delete this folder."
 
-svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
+sudo svn export https://github.com/dawesry/hosted/trunk/bin ~/bin
 
 echo "New `/bin` and contents downloaded."
 
