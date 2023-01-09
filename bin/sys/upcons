@@ -34,7 +34,7 @@ update_all() {
   echo "Old images pruned."
 }
 
-while getopts 'as' OPTION; do
+while getopts ':a:s' OPTION; do
   case "$OPTION" in
     a)
       echo "a"
@@ -45,11 +45,11 @@ while getopts 'as' OPTION; do
       update_one
       ;;
     ?)
-      echo "script usage: upcontainers [-a] [-s]"
+      echo "script usage: upcons [-a] [-s]"
       exit 1
       ;;
     *)
-      echo "script usage: upcontainers [-a] [-s]"
+      echo "script usage: upcons [-a] [-s]"
       exit 1
       ;;
   esac
