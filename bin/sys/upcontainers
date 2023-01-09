@@ -38,7 +38,7 @@ update_all() {
   exit 0
 }
 
-while getopts ":as"; do
+while getopts "as:"; do
   case $opt in
     a)
       echo "-a was triggered!"
