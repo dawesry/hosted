@@ -56,7 +56,7 @@ services:
             - TZ=“USA/New_York”
         volumes:
             - '/var/lib/docker/volumes/prowlarr_data/_data:/config'
-            - '/mnt/Media/"xa. Hosted Apps Backups":/Media/Downloads'
+            - '/mnt/Media/xa. Hosted Apps Backups:/Media/Downloads'
         restart: unless-stopped
         image: hotio/prowlarr:nightly
     
