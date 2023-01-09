@@ -54,7 +54,7 @@ while getopts "as:" flag; do
       echo "-s was triggered!"
       exit 0
       ;;
-    *?)
+    *)
       echo "Invalid option"
       help()
       exit 1
