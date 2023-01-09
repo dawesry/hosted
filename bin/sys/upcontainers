@@ -48,6 +48,10 @@ while getopts 'as' OPTION; do
       echo "script usage: upcontainers [-a] [-s]"
       exit 1
       ;;
+    *)
+      echo "script usage: upcontainers [-a] [-s]"
+      exit 1
+      ;;
   esac
 done
 shift "$(($OPTIND -1))"
