@@ -38,8 +38,8 @@ update_all() {
   exit 0
 }
 
-while getopts "as:"; do
-  case $opt in
+while getopts "as:" $flag; do
+  case $flag in
     a)
       echo "-a was triggered!"
       exit 0
