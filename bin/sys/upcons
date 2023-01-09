@@ -21,34 +21,20 @@ update_one () {
 }
 
 update_all() {
-  echo "Do you want to update all? (y/n)"
-  
-  read yesno
-  
-  if [$yesno == "y"]; then
-   
-    docker-compose pull
 
-    echo "New images pulled."
+  docker-compose pull
 
-    docker-compose up --force-recreate --build -d
+  echo "New images pulled."
 
-    echo "New containers up and running."
+  docker-compose up --force-recreate --build -d
 
-    docker image prune -f
+  echo "New containers up and running."
 
-    echo "Old images pruned."
-    
-    exit 1
-  fi
-  
-  if [$yesno == "n"]; then
-  
-    echo "Ok. Goodbye!"
-    
-    exit 1
-  fi
+  docker image prune -f
 
+  echo "Old images pruned."
+
+  exit 1
 }
 
 help_text() {
