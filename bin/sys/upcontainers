@@ -34,7 +34,7 @@ update_all() {
   echo "Old images pruned."
 }
 
-while getopts ':as' OPTION; do
+while getopts 'as' OPTION; do
   case "$OPTION" in
     a)
       echo "a"
