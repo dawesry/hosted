@@ -1,0 +1,48 @@
+#!/usr/bin/bash
+
+full_install () {
+  sudo apt purge caddy -y
+  sudo apt install -y debian-keyring debian-archive-keyring apt-transport-https
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | sudo gpg --dearmor -o /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+  curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo tee /etc/apt/sources.list.d/caddy-stable.list
+  sudo apt update
+  sudo apt install caddy
+  sudo systemctl enable caddy
+  sudo systemctl start caddy
+}
+
+reload_caddy () {
+  sudo systemctl reload caddy
+}
+
+if [ $# -lt 1 ]; then
+    echo "Not enough arguments."
+    echo "-f: full install \n -r reload caddy"
+    exit 1
+fi
+
+if [ $# -gt 1 ]; then
+    echo "Too many arguments."
+    echo "-f: full install \n -r reload caddy"
+    exit 1
+fi
+
+while getopts 'fr' OPTION; do
+  case "$OPTION" in
+    f)
+      full_install
+      exit 1
+      ;;
+    r)
+      reload_caddy
+      exit 1
+      ;;
+    *)
+      echo "-f: full install \n -r reload caddy"
+      exit 1
+      ;;
+  esac
+done
+shift "$(($OPTIND -1))"
+
+exit 0
